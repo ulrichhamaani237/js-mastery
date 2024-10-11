@@ -12,6 +12,7 @@ body
   align-items: center;
   min-height: 100vh;
   background: #eaeef0;
+  width: 600px;
 }
 
 .loader{
@@ -35,6 +36,87 @@ body
   
 }
 
+.loader2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  background-color: #f0abab;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  box-shadow: -7px -7px 20px rgb(238, 183, 183)
+  ,7px 7px 20px rgba(0, 0,0,0.3),
+  inset 1px 1px 3px rgba(0,0,0,0.1),
+  inset -1px -1px 3px rgba(255,255,255,1);
+
+}
+
+.loader2 span::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ border-radius: 10%;
+ margin: 12px;
+ background: #2877df;
+ box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+ -webkit-border-radius: 10%;
+ -moz-border-radius: 10%;
+ -ms-border-radius: 10%;
+ -o-border-radius: 10%;
+ transform: scale(0);
+ -webkit-transform: scale(0);
+ -moz-transform: scale(0);
+ -ms-transform: scale(0);
+ -o-transform: scale(0);
+ animation: animat 3.5s ease-in-out infinite;
+ -webkit-animation: animat 3.5s ease-in-out infinite;
+ transition: background 10s;
+ -webkit-transition: background 10s;
+ -moz-transition: background 10s;
+ -ms-transition: background 10s;
+ -o-transition: background 10s;
+}
+
+@keyframes animat {
+  0%{
+    transform: scale(5,2);
+    -webkit-transform: scale(5,5);
+    -moz-transform: scale(5,2);
+    -ms-transform: scale(5,2);
+    -o-transform: scale(5,2);
+    background: #000;
+    filter: hue-rotate(0deg);
+   -webkit-filter: hue-rotate(0deg);
+}
+
+50%{
+    transform: scale(01);
+    -webkit-transform: scale(01);
+    -moz-transform: scale(01);
+    -ms-transform: scale(01);
+    -o-transform: scale(01);
+    background: #fff;
+   
+}
+
+100%{
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  background: #f51b1b;
+}
+
+}
 .loader span::before
 {
   content: '';
