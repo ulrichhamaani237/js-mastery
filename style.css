@@ -172,3 +172,159 @@ body
    -webkit-filter: hue-rotate(360deg);
 }
 }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #287bdac7;
+}
+
+
+section .loader4{
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+section .loader4 span {
+ position: absolute;
+ top: 140px;
+ left: 130px;
+ width: 22%;
+ height: 30%;
+ background: #d1e3f8c7;
+ border-radius:55%;
+ -webkit-border-radius:55%;
+ -moz-border-radius:55%;
+ -ms-border-radius:55%;
+ -o-border-radius:55%;
+ box-shadow: 0 0 10px rgb(220, 245, 250),  0 0 20px rgb(220, 245, 250),  0 0 40px rgb(220, 245, 250),  0 0 60px rgb(220, 245, 250),  0 0 100px rgb(220, 245, 250);
+ transform: rotate(calc(18deg * var(--k)));
+ -webkit-transform: rotate(calc(18deg * var(--k)));
+ -moz-transform: rotate(calc(18deg * var(--k)));
+ -ms-transform: rotate(calc(18deg * var(--k)));
+ -o-transform: rotate(calc(18deg * var(--k)));
+ animation:anim 2s linear infinite;
+ -webkit-animation:anim 1s linear infinite;
+ transition: all ease-in-out 4s linear infinite;
+ -webkit-transition: all ease-in-out 4s linear infinite;
+ -moz-transition: all ease-in-out 4s linear infinite;
+ -ms-transition: all ease-in-out 4s linear infinite;
+ -o-transition: all ease-in-out 4s linear infinite;
+}
+
+section .loader4 span::before{
+  content: '';
+  position:absolute !important;
+  animation: circles 3s linear infinite !important;
+  animation-delay: 2s !important;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 30%;
+  background: #00a6ed;
+  border-radius: 50%;
+  padding: 5px;
+  -webkit-animation: circles 3s linear infinite !important;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: all ease-in-out 4s linear infinite;
+  -webkit-transition: all ease-in-out 4s linear infinite;
+  -moz-transition: all ease-in-out 4s linear infinite;
+  -ms-transition: all ease-in-out 4s linear infinite;
+  -o-transition: all ease-in-out 4s linear infinite;
+}
+
+@keyframes circles {
+  0%{
+    transform: scale(5);
+    -webkit-transform: scale(5);
+    -moz-transform: scale(5);
+    -ms-transform: scale(5);
+    -o-transform: scale(5);
+}
+}
+
+@keyframes anim {
+  0%{
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+}
+
+
+section .loader3 span {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 30%;
+  height: 100%;
+  transform: rotate(calc(18deg * var(--j)));
+  -webkit-transform: rotate(calc(18deg * var(--j)));
+  -moz-transform: rotate(calc(18deg * var(--j)));
+  -ms-transform: rotate(calc(18deg * var(--j)));
+  -o-transform: rotate(calc(18deg * var(--j)));
+  animation: animateBG 10s linear infinite;
+  -webkit-animation: animateBG 10s linear infinite;
+}
+
+@keyframes animateBG {
+  0%
+  {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  100%{
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+section .loader3 span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: #00ff0a;
+  box-shadow: 0 0 10px #00ff0a ,  0 0 20px #00ff0a,  0 0 40px #00ff0a,  0 0 60px #00ff0a,  0 0 80px #00ff0a,  0 0 100px #00ff0a,  0 0 120px #00ff0a  ;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: animate 1s linear infinite;
+  -webkit-animation: animate2 2s linear infinite;
+
+  animation-delay: calc(var(--j)* 0.1s);
+}
+
+@keyframes animate2{
+  0%
+  {
+    transform: scale(1)  ;
+    -webkit-transform: scale(1)  ;
+    -moz-transform: scale(1)  ;
+    -ms-transform: scale(1)  ;
+    -o-transform: scale(1)  ;
+  }
+
+  80%, 100%{
+    transform: scale(0)  ;
+    -webkit-transform: scale(0)  ;
+    -moz-transform: scale(0)  ;
+    -ms-transform: scale(0)  ;
+    -o-transform: scale(0)  ;
+  }
+}
