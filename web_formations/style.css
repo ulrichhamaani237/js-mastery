@@ -106,6 +106,77 @@ to{
     -o-transform: rotateX(-90deg) translateZ(45px);
 }
 
+.cube2 .face{
+border-width: 0;
+}
+
+.cube2 .face-avant{
+    background: url("https://juliencrego.com/wp-content/uploads/demo-flamingo.png") no-repeat #d03177;
+    background-size: 80px 80px;
+    background-position: 10px 10px;
+}
+
+.cube2 .face-arriere{
+    background-color: #FF6D00;
+
+}
+
+
+.cube2 .face-gauche{
+    background-color: #ff994d;
+
+}
+
+.cube2 .face-droite{
+    background-color: #ff994d;
+
+}
+
+.cube2 .face-haut{
+    background-color: #b34c00;
+}
+
+.cube2 .face-bas{
+    background-color: #b34c00;
+}
+
+.cube3 {
+    animation-name: cube3;
+    border-radius: 10%;
+
+}
+
+.cube3 .face {
+    border-width: 0;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+  .cube3 .face-avant {
+    background: url("https://juliencrego.com/wp-content/uploads/demo-flamingo.png") no-repeat #d03177;
+    background-size: 80px 80px;
+    background-position: 10px 10px;
+  }
+
+  .cube3 .face-arriere, .cube3 .face-droite, .cube3 .face-gauche, .cube3 .face-haut, .cube3 .face-bas {
+    background-color: #932253;
+  }
+
+  @keyframes cube3 {
+    from {
+      transform: rotateY(-20deg) rotateX(-20deg) scale3d(3, 3, 0.1);
+      -webkit-transform: rotateY(-20deg) rotateX(-20deg) scale3d(3, 3, 0.1);
+      -moz-transform: rotateY(-20deg) rotateX(-20deg) scale3d(3, 3, 0.1);
+      -ms-transform: rotateY(-20deg) rotateX(-20deg) scale3d(3, 3, 0.1);
+      -o-transform: rotateY(-20deg) rotateX(-20deg) scale3d(3, 3, 0.1);
+}
+    to {
+      transform: rotateY(-380deg) rotateX(-20deg) scale3d(1, 1, 0.1);
+    }
+  }
 
 
 .container
